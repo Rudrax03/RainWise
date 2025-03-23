@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RainWise</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- 🌧️ Main Container -->
+    <div class="container">
+      <!-- 🛠️ Header Section -->
+      <header>
+        <h1>🌧️ Rainwater Harvesting Estimator</h1>
+        <p>
+          Calculate potential rainwater collection based on your location and
+          roof size.
+        </p>
+      </header>
+
+      <!-- 📄 Form Section -->
+      <div class="card">
+        <h2>🔍 Enter Details</h2>
+
+        <div class="form-group">
+          <label for="roofSize">Roof Size (sq. meters):</label>
+          <input
+            type="number"
+            id="roofSize"
+            placeholder="Enter roof size"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="location">Location:</label>
+          <input
+            type="text"
+            id="location"
+            placeholder="Enter city name"
+            required
+          />
+        </div>
+
+        <div class="button-group">
+          <button onclick="calculateRainwater()">Calculate</button>
+        </div>
+      </div>
+
+      <!-- 🌤️ Display Sections -->
+      <div id="weatherInfo" class="card"></div>
+      <div id="result" class="card"></div>
+      <div id="storageSolution" class="card"></div>
+
+      <!-- 📰 Weather Articles Section -->
+      <div class="card">
+        <h2>📰 Weather Articles</h2>
+        <div id="weatherArticles"></div>
+      </div>
+
+      <!-- ⚠️ Precaution List -->
+      <div class="card">
+        <h2>⚠️ Precautions</h2>
+        <div id="precautionList"></div>
+      </div>
+    </div>
+
+    <!-- 📄 Script -->
+    <script src="script.js"></script>
+  </body>
+</html>
